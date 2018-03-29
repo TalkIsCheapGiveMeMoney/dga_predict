@@ -15,7 +15,9 @@ def generate_domains(nr_domains, seed='hereisaseeddomainthatweuse.com'):
 
     for i in range(nr_domains):
         seed = next_domain(seed)
-
+        print(seed)
         ret.append(seed)
 
     return ret
+
+generate_domains(100)
